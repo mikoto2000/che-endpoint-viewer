@@ -1,12 +1,12 @@
 {
-  "name": "che-project-cloner",
-  "version": "0.0.2",
-  "description": "Project cloner for Eclipse Che.",
+  "name": "che-endpoint-viewer",
+  "version": "0.0.1",
+  "description": "Endpoint viewer for Eclipse Che.",
   "main": "index.js",
   "scripts": {
     "build": "tsc index.ts",
     "run": "tsc index.ts ; node index.js",
-    "nexe": "nexe index.js",
+    "nexe": "nexe -o che-endpoint-viewer -t linux-x86-14.15.3 index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/mikoto2000/che-project-cloner#readme",
   "dependencies": {
-    "@eclipse-che/workspace-client": "0.0.1-1585913592",
+    "@eclipse-che/workspace-client": "0.0.1-1608729566",
     "@types/node": "^14.0.14",
-    "nexe": "^3.3.6",
     "typescript": "^3.9.5"
+  },
+  "devDependencies": {
+    "nexe": "^3.3.7"
   }
 }
