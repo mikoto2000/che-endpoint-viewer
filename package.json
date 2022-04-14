@@ -2,6 +2,10 @@
   "name": "che-endpoint-viewer",
   "version": "0.0.1",
   "description": "Endpoint viewer for Eclipse Che.",
+  "preferGlobal": true,
+  "bin": {
+    "che-endpoint-viewer": "index.js"
+  },
   "main": "index.js",
   "scripts": {
     "build": "tsc",
